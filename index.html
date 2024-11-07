@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bubble-container"></div>
+    
+    <header>
+        <nav>
+            <div class="left">Shiv Kumar Portfolio</div>
+            <div class="right"></div> 
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+                
+            </div>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="aboutLink">About Me</a>
+                    <div id="aboutMe" class="hidden">
+                        <p>My name is Shiv Kumar. I am a passionate Web developer with skills in data entry,
+                            Logo design, and 3D modeling. Currently, I am a student at Amity University,
+                            pursuing my BCA degree.</p> 
+                        <button id="closeAbout">Close</button>
+                    </div>
+                </li>
+                <li><a href="#">Services <span class="superscript"><sup>Pending</sup></span></a></li>
+                <li><a href="#">Projects <span class="superscript"><sup>Pending</sup></span></a></li>
+                <li><a href="#" id="contactLink">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">Shiv Kumar</span>
+                <div>and I am a passionate</div>
+                <div class="web">Web Developer<hr /></div>
+            </div>
+            <div class="rightsection">
+                <img src="vecteezy_hacker-free-illustration_23573752.png" alt="image" />
+            </div>
+        </section>
+        <hr />
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html5-logo-31813.png" alt="" />
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="vertical-desc">
+                        As an HTML developer, I specialize in creating clean, semantic code that enhances user experience and accessibility.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev png.jpg" alt="" />
+                    <div class="vertical-title">Web Developer</div>
+                    <div class="vertical-desc">
+                        As a web developer, I specialize in building responsive and user-friendly websites that deliver seamless experiences.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="icons8-nodejs-64.png" alt="" />
+                    <div class="vertical-title">Node.js</div>
+                    <div class="vertical-desc">
+                        As a Node.js developer, I build scalable and high-performance server-side applications using JavaScript.
+                        <p>Pending</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="s logo.png" alt="" />
+                    <div class="vertical-title">Logo Design</div>
+                    <div class="vertical-desc">
+                        As a logo designer, I craft unique visual identities that capture the essence of a brand.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="footer">
+            <div class="footer-container">
+                <h2>About Me</h2>
+                <p>My name is Shiv Kumar. I am a passionate Web developer with skills in data entry,
+                    Logo design, and 3D modeling. Currently, I am a student at Amity University,
+                    pursuing my BCA degree.
+                </p>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Data Entry</li>
+                    <li>Logo Design</li>
+                    <li>3D Modeling</li>
+                </ul>
+            </div>
+        </section> 
+
+        <section id="contact">
+          <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or potential collaborations. If you have any questions or would like to get in touch, please fill out the form below, and I’ll respond as soon as possible!</p>
+            <form id="contactForm" action="https://formspree.io/f/xgveaojk" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+        
+              <button type="submit">Send Message</button>
+            </form>
+            <p>If you prefer, you can also reach me directly at <a href="mailto:shivkumarji8127@gmail.com">shivkumarji8127@gmail.com</a>.</p>
+          </div>
+        </section>
+        
+
+    </footer>
+
+    <div id="popup" class="popup">
+        <span class="close" id="closePopup">&times;</span>
+        <div class="popup-content">
+            <form id="contactForm" action="https://formspree.io/f/xgveaojk" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
