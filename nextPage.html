@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv - Developer Portfolio</title>
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Box Container */
+        .box-container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Info Box Title and Text */
+        .info-box h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .info-box p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Next Button Style */
+        .next-btn, .back-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .next-btn:hover, .back-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Back Button Style */
+        .back-btn {
+            background-color: #f44336; /* Red color for Back button */
+        }
+
+        .back-btn:hover {
+            background-color: #e53935; /* Darker red */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for the Box -->
+    <div class="box-container">
+        <div class="info-box">
+            <h2>About Me</h2>
+            <p>My name is Shiv Kumar. I am a passionate Web developer with skills in data entry,
+                Logo design, and 3D modeling. Currently, I am a student at Amity University,
+                pursuing my BCA degree.</p>
+            
+            <!-- Next and Back buttons -->
+            <button class="next-btn" onclick="nextPage()">Next</button>
+            <button class="back-btn" onclick="goBack()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        let newWindow = null; // Variable to store the reference of the new window/tab
+
+        function nextPage() {
+            // Open a new window or tab
+            newWindow = window.open("index.html", "_blank"); // Replace "index.html" with the page you want to open
+        }
+
+        function goBack() {
+            // Check if the new tab/window is open, and close it
+            if (newWindow) {
+                newWindow.close(); // Close the newly opened tab or window
+            } else {
+                window.close(); // Close the current window if no new window is opened
+            }
+        }
+    </script>
+</body>
+</html>
+
